@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    /* max-height: 100%; */
+    /* overflow: scroll; */
+}
+/* #wrapper {
+    min-height: 100%;  */
+/* } */
+#container{
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    /* flex-direction: "" */
+    /* flex-direction: column; */
+    flex:1;
+
+    /* border-radius: 10; */
+    /* border: solid 3px blue; */
+}
+
+
+#first_comment{
+    align-self: center;
+}
+/* a:link {
+    text-decoration: none !important ;
+}
+#test:hover{
+    text-decoration: none !important;
+    color: black;
+} */
+#create_channel_modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed; /*Stay in place*/
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* #create_channel_inner_modal{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:50%;
+    height:50%;
+    background-color: red;
+    border-radius: 30px;
+} */
+/* #close_button{
+    top:0;
+    right:0;
+    position: absolute;
+    color: #aaa
+} */
+/* #close:hover, #close:focus {
+  color: black;
+  cursor: pointer;
+} */
+
+
+/* #message{
+ /* position: "absolute"; */
+ /* background-color: green; */
+ /* bottom: 0;    */
+ /* margin-top: auto; */
+ /* justify-content: flex-start; */
+/* } */ 
+
+
+
+
+
+/* .own_message{
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+}
+
+.own_message:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-left-color: #00aabb;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -30px;
+	margin-right: -60px;
+}
+
+.external_message {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+}
+
+.external_message:after {
+	content: '';
+	position: absolute; 
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	margin-top: -60px;
+	margin-left: -60px;
+} */

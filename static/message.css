@@ -1,0 +1,91 @@
+#message{
+    min-width:100%;
+    /* min-height: 100%; */
+    height:40px;
+    /* border: solid 5px rgb(35, 35, 99); */
+    display:flex;
+    /* height:100px;  */
+    /* flex:1; */
+}
+#no_messages{
+    align-self:center;
+}
+#new_message{
+    flex:3;
+    border-radius: 10px;
+
+}
+#submit_message{
+    flex:1;
+    background-color:rgb(50, 50, 156);
+    border-radius: 10px;
+
+}
+.own_message> .message_text{
+    font-weight: bold;
+    align-self: flex-end;
+    /* border: solid 2px rgb(54, 143, 54); */
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding:5px;
+    background-color: rgb(0, 132, 255)
+
+}
+.external_message> .message_text{
+    font-weight: bold;
+    align-self: flex-start;
+    /* border: solid 2px rgb(197, 20, 20); */
+    border-radius: 8px;
+    font-size: 20px;
+    padding:5px;
+    background-color: gray;
+
+}
+.extra_message_info{
+    font-size: 12px;
+}
+.channel_messages_container{
+    /* background-image: linear-gradient(to right, gray, white); */
+    background-color: honeydew;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex:3;
+
+
+    /* border-radius: 10;
+    border: solid 3px #ff7347; */
+}
+#total_messages{
+    min-width: 100%;
+    display:flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    flex:1;
+
+    overflow-y:auto; /*so that it only shows a scrollbar on the y-axis*/
+    /* max-height: 80%; */
+    /* background-color: aqua; */
+}
+.single_message_container{
+    display:flex;
+    flex-direction: column;
+}
+/* .single_message_container > *{
+    margin: 10px 0; 
+} */
+.own_message{
+    /* position: relative; */
+    /* right:0; */
+    align-self:flex-end;
+    /* background-color: green; */
+    margin:5px;
+}
+.external_message{
+    align-self: flex-start;
+    /* margin-right:auto; */
+    /* position: relative; */
+    /* left:0; */
+    margin:5px;
+}

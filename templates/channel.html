@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='channel.js') }}"></script>
+
+<script src="{{ url_for('static', filename='user.js') }}"></script>
+<script src="{{ url_for('static', filename='buttonChannels.js') }}"></script>
+<script src="{{url_for('static', filename='images.js')}}"></script>
+
+<!-- <script src="{{url_for('static', filename='helpers.js')}}" type="module"></script> -->
+
+
+{% endblock %}
+
+{% block body %}
+    <h1  id="channel_header" data-name="{{channel_name}}">This is your conversation in the channel: <span id="channel_header_name"> {{channel_name}}</span></h1>
+    <div id="total_messages">
+        {% for message in list_messages %}
+            <div data-sender={{message[1]}}>
+                <span data-sender={{message[1]}} class="message_text">{{message[0]}}</span>
+                <span class="extra_message_info">Sent by {{message[1]}}. Time sent: {{message[2]}}</span>
+                <!-- <img class="profile_picture" id="profile_picture"> -->
+            </div>
+        {% else %}
+        <h2 id="no_messages" data-info="no_messages">This channel has no messages yet. :( </h2>
+        {% endfor%}
+    
+    </div>
+    <form id="message">
+        <input type="text" placeholder="Start typing..." id="new_message">
+        <input type="submit" value="Send" id="submit_message"/>
+    </form>
+{% endblock%}
